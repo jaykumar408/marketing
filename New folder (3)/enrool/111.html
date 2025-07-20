@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Millionaire Track Enrollment</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+    }
+    .container {
+      display: flex;
+      max-width: 1200px;
+      margin: 40px auto;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      overflow: hidden;
+    }
+    .form-section {
+      flex: 1;
+      padding: 40px;
+    }
+    .form-section h2 {
+      margin-bottom: 30px;
+      font-size: 28px;
+      font-weight: bold;
+    }
+    form {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+    form input, form select {
+      padding: 12px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      width: 100%;
+    }
+    form .full-width {
+      grid-column: span 2;
+    }
+    .referral-group {
+      display: flex;
+      grid-column: span 2;
+    }
+    .referral-group input {
+      flex: 1;
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+    .referral-group button {
+      padding: 12px 20px;
+      background-color: #ffb200;
+      color: white;
+      border: none;
+      border-top-right-radius: 6px;
+      border-bottom-right-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    .image-section {
+      flex: 1;
+      background-color: #0056ff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .image-section img {
+      max-width: 90%;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="form-section">
+      <h2>Enroll to Millionaire Track</h2>
+      <form>
+        <input type="text" placeholder="Name As Per Aadhaar Card">
+        <input type="text" placeholder="Username">
+
+        <input type="email" placeholder="Email" class="full-width">
+        <input type="email" placeholder="Confirm Email" class="full-width">
+
+        <select>
+          <option>--- Select State ---</option>
+          <option>Maharashtra</option>
+          <option>Karnataka</option>
+          <option>Tamil Nadu</option>
+          <option>Delhi</option>
+          <!-- Add more states -->
+        </select>
+        <input type="text" placeholder="dd-mm-yyyy" onfocus="(this.type='date')" onblur="if(this.value==''){this.type='text'}">
+
+        <input type="tel" placeholder="+91 | Mobile No.">
+        <input type="password" placeholder="Password">
+
+        <div class="referral-group">
+          <input type="text" placeholder="Referral code">
+          <button type="button">Apply Code</button>
+        </div>
+      </form>
+    </div>
+    <div class="image-section">
+      <img src="C:\Users\LENOVO\Downloads\New folder (3)\enrool\qr.jpg" alt="Illustration">
+    </div>
+  </div>
+
+  <script>
+    // JS functionality can be added here (e.g., validations, button actions)
+  </script>
+</body>
+</html>

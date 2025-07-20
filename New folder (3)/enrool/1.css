@@ -1,0 +1,86 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: #f8f8f8;
+  padding: 40px;
+}
+
+.container {
+  display: flex;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.form-section {
+  flex: 1;
+  padding: 40px;
+}
+
+.form-section h1 {
+  margin-bottom: 30px;
+  font-size: 28px;
+  font-weight: bold;
+  color: #111;
+}
+
+form input,
+form select {
+  width: 100%;
+  padding: 12px 15px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.form-row {
+  display: flex;
+  gap: 15px;
+}
+
+.password-container {
+  position: relative;
+  width: 100%;
+}
+
+.password-container input {
+  width: 100%;
+}
+
+.toggle-password {
+  position: absolute;
+  top: 35%;
+  right: 10px;
+  cursor: pointer;
+}
+
+.apply-btn {
+  background-color: #ffc107;
+  color: black;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.image-section {
+  flex: 1;
+  background: #005cf2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+}
+
+.image-section img {
+  width: 100%;
+  max-width: 400px;
+}
